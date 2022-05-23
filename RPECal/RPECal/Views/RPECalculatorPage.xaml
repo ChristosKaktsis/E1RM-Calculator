@@ -1,11 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:vm="clr-namespace:RPECal.ViewModels"
              x:Class="RPECal.Views.RPECalculatorPage" 
              Shell.NavBarHasShadow="False"
              >
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <x:Array x:Key="RepsSource" Type="{x:Type x:Int32}">
+                <x:Int32>10</x:Int32>
+                <x:Int32>9</x:Int32>
+                <x:Int32>8</x:Int32>
+                <x:Int32>7</x:Int32>
+                <x:Int32>6</x:Int32>
+                <x:Int32>5</x:Int32>
+                <x:Int32>4</x:Int32>
+                <x:Int32>3</x:Int32>
+                <x:Int32>2</x:Int32>
+                <x:Int32>1</x:Int32>
+            </x:Array>
+            <x:Array x:Key="RPESource" Type="{x:Type x:Double}">
+                <x:Double>10</x:Double>
+                <x:Double>9.5</x:Double>
+                <x:Double>9</x:Double>
+                <x:Double>8.5</x:Double>
+                <x:Double>8</x:Double>
+                <x:Double>7.5</x:Double>
+                <x:Double>7</x:Double>
+                <x:Double>6.5</x:Double>
+            </x:Array>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <Grid>
+        <Grid x:DataType="vm:RPECalculatorViewModel">
             <Grid.RowDefinitions>
                 <RowDefinition Height="60"/>
                 <RowDefinition Height="2*"/>
@@ -19,26 +45,39 @@
                 <Label Text="Working set kg"
                        FontSize="16"/>
                 <Entry Keyboard="Numeric"
+                       Text="{Binding Weight}"
                        />
                 <Label Text="No of reps"
                        FontSize="16"/>
-                <Picker/>
+                <Picker ItemsSource="{StaticResource RepsSource}"
+                        SelectedItem="{Binding Reps}"/>
                 <Label Text="Working set RPE"
                        FontSize="16"/>
-                <Picker/>
+                <Picker ItemsSource="{StaticResource RPESource}"
+                        SelectedItem="{Binding RPE}"/>
                 <Button Text="Calculate ERM" TextTransform="None"
                         FontSize="16"
                         Margin="0,20,0,0"
-                        CornerRadius="30"/>
+                        CornerRadius="30"
+                        Command="{Binding CalculateE1RMCommand}"/>
             </StackLayout>
             <Frame Grid.Row="2" Grid.Column="0">
-                <StackLayout HorizontalOptions="Center">
+                <Grid HorizontalOptions="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="250"/>
+                    </Grid.ColumnDefinitions>
+                    <ActivityIndicator Grid.Row="1" IsRunning="{Binding IsBusy}"/>
                     <Label Text="Your E1RM"
-                           FontSize="25"/>
-                    <Label Text="140"
+                           FontSize="25"
+                           />
+                    <Label Text="{Binding E1RM}"
                            FontSize="60" FontAttributes="Bold"
-                           HorizontalOptions="Center"/>
-                </StackLayout>
+                           Grid.Row="1"
+                           />
+                </Grid>
             </Frame>
         </Grid>
     </ContentPage.Content>

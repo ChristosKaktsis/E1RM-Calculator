@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RPECal.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,13 +13,12 @@ namespace RPECal.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RPECalculatorPage : ContentPage
     {
+        private RPECalculatorViewModel _viewModel;
+
         public RPECalculatorPage()
         {
             InitializeComponent();
-        }
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
+            BindingContext = _viewModel = new RPECalculatorViewModel();
         }
     }
 }
