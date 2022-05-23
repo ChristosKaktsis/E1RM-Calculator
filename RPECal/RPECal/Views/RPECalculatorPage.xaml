@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RPECal.Views.RPECalculatorPage" 
+             Shell.NavBarHasShadow="False"
+             >
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="2*"/>
+
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0"
+                   HorizontalOptions="Center"
+                   Text="ERM Calculator"
+                   FontSize="25" FontAttributes="Bold"/>
+            <StackLayout Grid.Row="1" Grid.Column="0" Margin="30,0,30,0">
+                <Label Text="Working set kg"
+                       FontSize="16"/>
+                <Entry Keyboard="Numeric"
+                       />
+                <Label Text="No of reps"
+                       FontSize="16"/>
+                <Picker/>
+                <Label Text="Working set RPE"
+                       FontSize="16"/>
+                <Picker/>
+                <Button Text="Calculate ERM" TextTransform="None"
+                        FontSize="16"
+                        Margin="0,20,0,0"
+                        CornerRadius="30"/>
+            </StackLayout>
+            <Frame Grid.Row="2" Grid.Column="0">
+                <StackLayout HorizontalOptions="Center">
+                    <Label Text="Your E1RM"
+                           FontSize="25"/>
+                    <Label Text="140"
+                           FontSize="60" FontAttributes="Bold"
+                           HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
