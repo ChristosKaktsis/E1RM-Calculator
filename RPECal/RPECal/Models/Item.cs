@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RPECal.Models
+namespace E1RM.Models
 {
     public class Item
     {

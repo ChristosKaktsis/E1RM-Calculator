@@ -1,12 +1,12 @@
-﻿using RPECal.Data;
-using RPECal.Services;
-using RPECal.Views;
+﻿using E1RM.Data;
+using E1RM.Services;
+using E1RM.Views;
 using System;
 using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace RPECal
+namespace E1RM
 {
     public partial class App : Application
     {

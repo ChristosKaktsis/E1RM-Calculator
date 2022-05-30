@@ -1,8 +1,8 @@
-﻿using RPECal.ViewModels;
+﻿using E1RM.ViewModels;
 using System.ComponentModel;
 using Xamarin.Forms;
 
-namespace RPECal.Views
+namespace E1RM.Views
 {
     public partial class ItemDetailPage : ContentPage
     {

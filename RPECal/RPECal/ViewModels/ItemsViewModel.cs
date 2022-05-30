@@ -1,12 +1,12 @@
-﻿using RPECal.Models;
-using RPECal.Views;
+﻿using E1RM.Models;
+using E1RM.Views;
 using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace RPECal.ViewModels
+namespace E1RM.ViewModels
 {
     public class ItemsViewModel : BaseViewModel
     {

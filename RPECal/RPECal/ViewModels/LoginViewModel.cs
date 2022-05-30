@@ -1,10 +1,10 @@
-﻿using RPECal.Views;
+﻿using E1RM.Views;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
 
-namespace RPECal.ViewModels
+namespace E1RM.ViewModels
 {
     public class LoginViewModel : BaseViewModel
     {

@@ -1,6 +1,6 @@
-﻿using RPECal.Models;
-using RPECal.ViewModels;
-using RPECal.Views;
+﻿using E1RM.Models;
+using E1RM.ViewModels;
+using E1RM.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace RPECal.Views
+namespace E1RM.Views
 {
     public partial class ItemsPage : ContentPage
     {

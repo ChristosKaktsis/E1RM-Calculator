@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace RPECal.Services
+namespace E1RM.Services
 {
     public interface IDataStore<T>
     {

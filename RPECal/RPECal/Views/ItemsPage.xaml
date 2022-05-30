@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="RPECal.Views.ItemsPage"
+             x:Class="E1RM.Views.ItemsPage"
              Title="{Binding Title}"
-             xmlns:local="clr-namespace:RPECal.ViewModels"  
-             xmlns:model="clr-namespace:RPECal.Models"  
+             xmlns:local="clr-namespace:E1RM.ViewModels"  
+             xmlns:model="clr-namespace:E1RM.Models"  
              x:Name="BrowseItemsPage">
 
     <ContentPage.ToolbarItems>

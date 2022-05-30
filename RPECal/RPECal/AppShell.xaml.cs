@@ -1,10 +1,10 @@
-﻿using RPECal.ViewModels;
-using RPECal.Views;
+﻿using E1RM.ViewModels;
+using E1RM.Views;
 using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
 
-namespace RPECal
+namespace E1RM
 {
     public partial class AppShell : Xamarin.Forms.Shell
     {

@@ -2,10 +2,10 @@
 using System.IO;
 using System.Reflection;
 using System.Threading.Tasks;
-using RPECal.Models;
+using E1RM.Models;
 using SQLite;
 
-namespace RPECal.Data
+namespace E1RM.Data
 {
     public class RPEDatabase
     {
@@ -15,7 +15,7 @@ namespace RPECal.Data
         {
             //get data from file db
             Assembly assembly = IntrospectionExtensions.GetTypeInfo(typeof(App)).Assembly;
-            Stream embeddedDatabaseStream = assembly.GetManifestResourceStream("RPECal.RPE.db");
+            Stream embeddedDatabaseStream = assembly.GetManifestResourceStream("E1RM.RPE.db");
             if (!File.Exists(dbPath))
             {
                 FileStream fileStreamToWrite = File.Create(dbPath);

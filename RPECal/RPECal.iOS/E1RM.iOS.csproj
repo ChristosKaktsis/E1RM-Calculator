@@ -140,9 +140,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\RPECal\RPECal.csproj">
-      <Project>{642000EA-A67C-4365-BED3-62E6F7B2E696}</Project>
-      <Name>RPECal</Name>
+    <ProjectReference Include="..\RPECal\E1RM.csproj">
+      <Project>{B1CE8666-DB78-4AF5-A21C-41DF7D77CA72}</Project>
+      <Name>E1RM</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace RPECal.iOS
+namespace E1RM.iOS
 {
     public class Application
     {

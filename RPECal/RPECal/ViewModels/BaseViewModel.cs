@@ -1,12 +1,12 @@
-﻿using RPECal.Models;
-using RPECal.Services;
+﻿using E1RM.Models;
+using E1RM.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using Xamarin.Forms;
 
-namespace RPECal.ViewModels
+namespace E1RM.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {

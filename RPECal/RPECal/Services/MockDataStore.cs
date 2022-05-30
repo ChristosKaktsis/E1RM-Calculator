@@ -1,10 +1,10 @@
-﻿using RPECal.Models;
+﻿using E1RM.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace RPECal.Services
+namespace E1RM.Services
 {
     public class MockDataStore : IDataStore<Item>
     {

@@ -1,11 +1,11 @@
-﻿using RPECal.Models;
+﻿using E1RM.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 
-namespace RPECal.ViewModels
+namespace E1RM.ViewModels
 {
     public class NewItemViewModel : BaseViewModel
     {

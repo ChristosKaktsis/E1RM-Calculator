@@ -1,10 +1,10 @@
-﻿using RPECal.Models;
+﻿using E1RM.Models;
 using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace RPECal.ViewModels
+namespace E1RM.ViewModels
 {
     [QueryProperty(nameof(ItemId), nameof(ItemId))]
     public class ItemDetailViewModel : BaseViewModel

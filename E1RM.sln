@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32126.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPECal.Android", "RPECal\RPECal.Android\RPECal.Android.csproj", "{2D887BF1-FCA1-463E-BE62-268CBF1F952B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E1RM.Android", "RPECal\RPECal.Android\E1RM.Android.csproj", "{2D887BF1-FCA1-463E-BE62-268CBF1F952B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPECal.iOS", "RPECal\RPECal.iOS\RPECal.iOS.csproj", "{1AEDC9D5-1AC0-40E2-92B1-DD6362F7EACA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E1RM.iOS", "RPECal\RPECal.iOS\E1RM.iOS.csproj", "{1AEDC9D5-1AC0-40E2-92B1-DD6362F7EACA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPECal", "RPECal\RPECal\RPECal.csproj", "{B1CE8666-DB78-4AF5-A21C-41DF7D77CA72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E1RM", "RPECal\RPECal\E1RM.csproj", "{B1CE8666-DB78-4AF5-A21C-41DF7D77CA72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

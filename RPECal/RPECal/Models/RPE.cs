@@ -1,7 +1,7 @@
 ﻿using System;
 using SQLite;
 
-namespace RPECal.Models
+namespace E1RM.Models
 {
     public class RPE
     {

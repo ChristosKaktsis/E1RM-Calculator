@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:vm="clr-namespace:RPECal.ViewModels"
-             x:Class="RPECal.Views.RPECalculatorPage" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:vm="clr-namespace:E1RM.ViewModels"
+             x:Class="E1RM.Views.RPECalculatorPage" 
              Shell.NavBarHasShadow="False"
              >
     <ContentPage.Resources>
@@ -45,7 +45,7 @@
                 <Label Text="Working set kg"
                        FontSize="16"/>
                 <Entry Keyboard="Numeric"
-                       Text="{Binding Weight}"
+                       Text="{Binding Weight,Mode=OneWayToSource}"
                        />
                 <Label Text="No of reps"
                        FontSize="16"/>
