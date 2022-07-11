@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:vm="clr-namespace:E1RM.ViewModels" xmlns:model="clr-namespace:E1RM.Models"
+             x:Class="E1RM.Views.PercentagePage"
+             Shell.NavBarHasShadow="False"
+             Visual="Material">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+            <DataTemplate x:Key="percent_template">
+                <Frame x:DataType="model:PercentageItem">
+                    <Grid>
+                        <Label Grid.Column="0"
+                               Text="{Binding Percent,StringFormat='{0}%'}"/>
+                        <Label Grid.Column="1"
+                               Text="{Binding Weight,StringFormat='{0} kg'}"
+                               HorizontalOptions="Center"/>
+                        <Label Grid.Column="2"
+                               Text="{Binding Reps}"
+                               HorizontalOptions="End"/>
+                    </Grid>
+                </Frame>
+            </DataTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout x:DataType="vm:PercentageViewModel">
+            <Label Margin="0,10,0,0"
+                   HorizontalOptions="Center"
+                   Text="Percentage of 1RM"
+                   FontSize="25" FontAttributes="Bold"/>
+            <Frame Padding="10" HasShadow="False">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+                    <Entry Grid.Column="0" 
+                           Placeholder="Weight"
+                           Text="{Binding Weight,Mode=OneWayToSource}" Keyboard="Numeric"/>
+                    <Entry Grid.Column="1" 
+                           Placeholder="Repetitions"
+                           Text="{Binding Reps,Mode=OneWayToSource}" Keyboard="Numeric"/>
+                    <Button Grid.Row="1" Grid.ColumnSpan="2" 
+                            Text="Calculate" 
+                            CornerRadius="30"
+                            Command="{Binding Calculate}"/>
+                </Grid>
+            </Frame>
+            <Frame Padding="10">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Column="0"
+                               Text="Percentage of 1RM"/>
+                    <Label Grid.Column="1"
+                               Text="Lift Weight"
+                               HorizontalOptions="Center"/>
+                    <Label Grid.Column="2"
+                               Text="Repetitions"
+                               HorizontalOptions="End"/>
+                </Grid>
+            </Frame>
+            <CollectionView ItemsSource="{Binding PercentageList}"
+                            ItemTemplate="{StaticResource percent_template}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

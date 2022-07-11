@@ -7,7 +7,12 @@
     -->
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="Primary">#2196F3</Color>
+            <Color x:Key="Primary">#e26d14</Color>
+            <Color x:Key="Complementary">#1489e2</Color>
+            <Color x:Key="Analogous">#e21422</Color>
+            <Color x:Key="Analogous2">#e2d514</Color>
+            <Color x:Key="Triadic">#89e214</Color>
+            <Color x:Key="Triadic2">#14e26e</Color>
             <Style TargetType="Button">
                 <Setter Property="TextColor" Value="White"></Setter>
                 <Setter Property="VisualStateManager.VisualStateGroups">

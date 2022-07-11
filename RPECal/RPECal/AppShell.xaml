@@ -19,11 +19,12 @@
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
                 <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
-                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Complementary}" />
                 <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
                 <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
                 <Setter Property="Shell.TabBarTitleColor" Value="White"/>
-                <Setter Property="Shell.TabBarIsVisible" Value="False"/>
+                <Setter Property="Shell.NavBarIsVisible" Value="False"/>
+                <!--<Setter Property="Shell.TabBarIsVisible" Value="False"/>-->
             </Style>
             <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
             <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
@@ -31,7 +32,10 @@
     </Shell.Resources>
 
     <TabBar>
-        <ShellContent Title="RPECalculator" Icon="icon_about.png" Route="RPECalculatorPage" ContentTemplate="{DataTemplate local:RPECalculatorPage}" />
+        <ShellContent Title="E1RM" Icon="max.png" Route="RPECalculatorPage" ContentTemplate="{DataTemplate local:RPECalculatorPage}" />
+        <ShellContent Title="Working Weight" Icon="ww.png" Route="WorkingWeightCalculatorPage" ContentTemplate="{DataTemplate local:WorkingWeightCalculatorPage}" />
+        <ShellContent Title="Percentage" Icon="weightperc.png" Route="PercentagePage" ContentTemplate="{DataTemplate local:PercentagePage}" />
+
         <!--<ShellContent Title="Browse" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />-->
     </TabBar>
 
